@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturas</title>
+    <link rel="stylesheet" href="atual.css">
+</head>
+<body>
+    <h1>Atualize-se</h1>
+    <div class="geral">
+        <div>
+            <input id="real" type="number"><br>
+            <input id="RealD" name="c" type="radio">Real para Dólar</input><br>
+            <input id="RealEu" name="c" type="radio">Real para Euro</input><br>
+            <input id="RealL" name="c" type="radio">Real para Libras</input><br><br>
+            <button class="button1" onclick="converter()">Converter</button><br>
+            <p id="r">Resultado</p>
+        </div>
+    </div>
+
+<br>
+    <div class="linha">
+    <button class="button2" onclick="voltar()">Voltar</button>
+</div>
+</body>
+</html>
+<script>
+function converter(){
+    var reais = Number(document.getElementById("real").value)
+    var resultado = 0
+    if(document.getElementById("RealEu").checked){
+        resultado = (reais * 107/20)
+    }
+    else if(document.getElementById("RealD").checked){
+        resultado = (reais * 487/100)
+    }
+    else if(document.getElementById("RealL").checked){
+        resultado = (reais * 309/50)
+    }
+    else{
+        resultado = "você precisa selecionar uma opção!"
+        alert(resultado)
+    }
+    document.getElementById("r").innerHTML = resultado
+}
+
+function voltar(){
+    window.location.href="./home.html"
+}
+
+</script>

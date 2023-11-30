@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Tangerina';
+  src: url("fontes/OFL.txt") format('opentype'),
+   url('fontes/Tangerine-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: monospace; 
+    font-weight: 200px;
+    height: 100vh;
+    width: 95vw;
+    height: 95vh;
+    background-image: url("./imagens/605lgi.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1{
+    font-size: 100px;
+    padding: auto 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Tangerina';
+  }
+
+  h2{
+    font-size: 30px;
+    padding: auto 0;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+  }
+
+  input{margin: 2px;
+  background-color: rgba(44, 7, 7);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  font-weight: 300;
+  height: 16px;
+  text-align: center;
+  border: none;
+  }
+  
+  .geral{
+    border:none;
+    width: 220px;
+    height: min-content;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgba(12, 2, 0, 0.411);
+    border-radius: 10px;
+  }
+  
+  .button1{
+    background-color: rgba(44, 7, 7);
+    border-radius: 15px;
+    height: 30px;
+    width: 130px;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-size: large;
+  }
+
+  .button2{
+    background-color: rgb(44, 7, 7);
+    height: 30px;
+    width: 130px;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-size: large;
+  }
+
+  .linha{
+    background-color:rgba(12, 2, 0, 0.411);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 240px;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+
+
